@@ -3,7 +3,7 @@ import React from "react";
 const Blogs = () => {
   return (
     <div>
-      {/* <div className="flex items-center justify-center">
+      <div className="flex items-center justify-center">
         <div className="bg-white">
           <div className="w-full container flex flex-col justify-center px-4 py-8 mx-auto md:p-8">
             <h2 className="text-2xl font-semibold">
@@ -13,7 +13,7 @@ const Blogs = () => {
               React Interview Questions And Answers
             </p>
             <div className="space-y-4 w-full">
-              <details className=" rounded-lg ring-1 ring-purple-600">
+              <details className=" rounded-lg ring-1 ring-purple-600 ">
                 <summary className="px-4 py-6">
                   What is the purpose of react router?
                 </summary>
@@ -55,7 +55,7 @@ const Blogs = () => {
             </div>
           </div>
         </div>
-      </div> */}
+      </div>
     </div>
   );
 };
