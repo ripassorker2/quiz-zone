@@ -12,7 +12,7 @@ const Navbar = () => {
   ];
 
   return (
-    <div className="flex justify-between items-center w-full  bg-black text-gray-300 px-9 py-6">
+    <div className="flex justify-between items-center w-full  bg-black text-gray-300 px-9 py-6 ">
       <div>
         <h2 className="italic font-semibold text-4xl hover:text-pink-600 duration-300 ">
           Quiz Zone
