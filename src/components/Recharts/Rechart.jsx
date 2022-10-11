@@ -1,9 +1,12 @@
-import React from "react";
+import React, { useContext } from "react";
+import { PieChart, Pie, Tooltip } from "recharts";
+import { CoursesContext } from "../../Main/Main";
 
 const Rechart = () => {
+  const topics = useContext(CoursesContext);
   return (
-    <div>
-      <h1>This is Rechart components</h1>
+    <div className="text-black text-2xl text-center">
+      <h1>This is reacherts </h1>
     </div>
   );
 };

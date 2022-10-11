@@ -4,6 +4,7 @@ import Topic from "../Topic/Topic";
 
 const Quiz = () => {
   const topics = useContext(CoursesContext);
+
   return (
     <div>
       <section>

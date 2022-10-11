@@ -3,6 +3,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Blogs from "./components/Blogs/Blogs";
 import ErrorPage from "./components/ErrorPage/ErrorPage";
 import Home from "./components/Home/Home";
+import QuizDetails from "./components/QuixDetails/QuizDetails";
 import Quiz from "./components/Quiz/Quiz";
 import Rechart from "./components/Recharts/Rechart";
 import Main from "./Main/Main";
@@ -11,15 +12,25 @@ const App = () => {
   const router = createBrowserRouter([
     {
       path: "/",
-      element: <Main></Main>,
-      loader: () => fetch("https://openapi.programming-hero.com/api/quiz"),
+      element: <Main />,
+      loader: async () =>
+        fetch("https://openapi.programming-hero.com/api/quiz"),
       errorElement: <ErrorPage></ErrorPage>,
       children: [
-        { path: "/", element: <Home></Home> },
-        { path: "/home", element: <Home></Home> },
-        { path: "quiz", element: <Quiz></Quiz> },
-        { path: "/rechart", element: <Rechart></Rechart> },
-        { path: "/blogs", element: <Blogs></Blogs> },
+        { path: "/", element: <Home /> },
+        { path: "/home", element: <Home /> },
+        { path: "/quiz", element: <Quiz /> },
+        {
+          path: "/quiz/:id",
+          loader: ({ params }) => {
+            return fetch(
+              `https://openapi.programming-hero.com/api/quiz/${params.id}`
+            );
+          },
+          element: <QuizDetails />,
+        },
+        { path: "/rechart", element: <Rechart /> },
+        { path: "/blogs", element: <Blogs /> },
       ],
     },
   ]);
