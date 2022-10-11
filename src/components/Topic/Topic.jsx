@@ -5,11 +5,11 @@ const Topic = ({ topic }) => {
   const { id, name, logo, total } = topic;
   // console.log(topic);
   return (
-    <div className="max-w-xs p-6 bg-fuchsia-200 rounded-md shadow-lg md:w-64">
+    <div className="max-w-xs p-6 bg-black text-white rounded-md shadow-lg md:w-64 duration-300 hover:bg-pink-500">
       <img
         src={logo}
         alt=""
-        className="object-cover border-2 border-black object-center  w-full rounded-md h-3/5 dark:bg-gray-500"
+        className="object-cover border-2 border-white object-center  w-full rounded-md h-3/5 dark:bg-gray-500"
       />
       <div className="mt-6 mb-2 ">
         <h2 className="text-xl  font-semibold tracking-wide font-serif">

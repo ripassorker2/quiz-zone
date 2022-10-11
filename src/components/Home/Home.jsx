@@ -14,7 +14,7 @@ const Home = () => {
               Hello !! <br />
               Welcome to <br /> Quiz Zone !!
             </h1>
-            <p className="text-gray-700 py-4 text-xl">
+            <p className="text-gray-300 py-4 text-xl">
               This is an online quiz practice platfrom !! You can practice hare
               any type of language or css framework as like JavaScript, Html,
               Css, Bootstarp, Sass ,React etc!!
@@ -23,7 +23,7 @@ const Home = () => {
               <Link
                 rel="noopener noreferrer"
                 to={"/quiz"}
-                className="px-8 py-3 font-semibold rounded bg-blue-600 text-white"
+                className="px-8 py-3 font-semibold rounded bg-blue-600 text-white hover:bg-transparent duration-200 hover:text-black hover:border-2 hover:border-purple-600"
               >
                 More Details{" "}
               </Link>
@@ -39,7 +39,7 @@ const Home = () => {
         </div>
       </section>
       <section>
-        <h2 className="text-center md:text-6xl text-4xl font-serif font-semibold my-9">
+        <h2 className="text-center md:text-6xl text-4xl font-serif font-semibold border-b-2 pb-4 my-9">
           Quiz Lists
         </h2>
         <div className="mb-9 mt-11 grid lg:grid-cols-3 md:grid-cols-2 grid-rows-1 md:gap-8  gap-y-8   md:w-3/4 w-3/5 m-auto ">

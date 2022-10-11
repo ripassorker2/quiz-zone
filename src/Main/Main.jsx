@@ -10,9 +10,9 @@ const Main = () => {
   return (
     <div>
       <CoursesContext.Provider value={courses}>
-        <Navbar></Navbar>
-        <Outlet></Outlet>
-        <Footer></Footer>
+        <Navbar />
+        <Outlet />
+        <Footer />
       </CoursesContext.Provider>
     </div>
   );
