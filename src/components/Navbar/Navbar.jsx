@@ -6,7 +6,7 @@ const Navbar = () => {
   const [manu, setManu] = useState(true);
   const link = [
     { id: 1, link: " Home", path: "/home" },
-    { id: 2, link: " Quix", path: "/quiz" },
+    { id: 2, link: " Quiz", path: "/quiz" },
     { id: 3, link: " Rechart", path: "/rechart" },
     { id: 4, link: " Blogs", path: "/blogs" },
   ];

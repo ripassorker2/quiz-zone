@@ -23,7 +23,7 @@ const Home = () => {
               <Link
                 rel="noopener noreferrer"
                 to={"/quiz"}
-                className="px-8 py-3 font-semibold rounded bg-blue-600 text-white hover:bg-transparent duration-200 hover:text-black hover:border-2 hover:border-purple-600"
+                className="px-8 py-3 font-semibold rounded bg-blue-600 text-white hover:bg-transparent duration-200 hover:text-white hover:border-2 hover:border-purple-600"
               >
                 More Details{" "}
               </Link>
