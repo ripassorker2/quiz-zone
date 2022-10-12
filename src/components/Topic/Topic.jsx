@@ -5,7 +5,7 @@ const Topic = ({ topic }) => {
   const { id, name, logo, total } = topic;
   // console.log(topic);
   return (
-    <div className="max-w-xs p-6 bg-black text-white rounded-md shadow-lg md:w-64 duration-300 hover:bg-pink-500">
+    <div className="max-w-xs p-5 bg-black text-white rounded-md shadow-lg md:w-72 w-full duration-300 hover:bg-pink-500">
       <img
         src={logo}
         alt=""
@@ -18,7 +18,7 @@ const Topic = ({ topic }) => {
       </div>
       <p className="dark:text-gray-100">Quiz amount: {total}</p>
       <Link to={`/quiz/${id}`}>
-        <button className="py-2 w-full mt-6 mb-5  font-semibold rounded bg-blue-600 text-white ">
+        <button className="py-2 w-full mt-6  font-semibold rounded bg-blue-600 text-white ">
           Play Quiz
         </button>
       </Link>
