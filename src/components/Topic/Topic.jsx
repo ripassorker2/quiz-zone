@@ -18,7 +18,7 @@ const Topic = ({ topic }) => {
       </div>
       <p className="dark:text-gray-100">Quiz amount: {total}</p>
       <Link to={`/quiz/${id}`}>
-        <button className="py-2 w-full mt-6  font-semibold rounded bg-blue-600 text-white ">
+        <button className="py-2 w-full mt-6 mb-5  font-semibold rounded bg-blue-600 text-white ">
           Play Quiz
         </button>
       </Link>

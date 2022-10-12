@@ -1,6 +1,6 @@
 # Quiz Zone App
 
-###`Live Link` :
+###`Live Link` : https://admirable-palmier-fc19df.netlify.app/
 
 This is quiz application. You can paractice here. Here are javascript, css , git and react available !
 

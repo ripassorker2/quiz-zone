@@ -9,15 +9,22 @@ const Rechart = () => {
   return (
     <div>
       <div className="flex text-center m-auto justify-center md:w-3/4 my-7 text-white">
-        <div>
-          <BarChart width={450} height={440} data={quizData}>
-            <XAxis dataKey="name" />
-            <YAxis />
-            <Legend />
-            <Tooltip />
-            <Bar dataKey="total" fill="gray" />
-          </BarChart>
-        </div>
+        <BarChart
+          className="w-full h-20"
+          width={350}
+          height={440}
+          data={quizData}
+          masring={{
+            right: 31,
+            leftt: 31,
+          }}
+        >
+          <XAxis dataKey="name" />
+          <YAxis />
+          <Legend />
+          <Tooltip />
+          <Bar dataKey="total" fill="gray" />
+        </BarChart>
       </div>
     </div>
   );
