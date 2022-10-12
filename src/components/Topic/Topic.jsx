@@ -5,7 +5,7 @@ const Topic = ({ topic }) => {
   const { id, name, logo, total } = topic;
   // console.log(topic);
   return (
-    <div className="max-w-xs p-5 bg-black text-white rounded-md shadow-lg md:w-72 w-full duration-300 hover:bg-pink-500">
+    <div className="max-w-xs p-5 bg-black text-white rounded-md shadow-lg w-72  duration-300 hover:bg-pink-500">
       <img
         src={logo}
         alt=""

@@ -42,7 +42,7 @@ const Home = () => {
         <h2 className="text-center md:text-6xl text-4xl font-serif font-semibold border-b-2 pb-4 my-9">
           Quiz Lists
         </h2>
-        <div className="mb-9 mt-11 grid lg:grid-cols-3 md:grid-cols-2 grid-rows-1 md:gap-8  gap-y-8   md:w-3/4 w-3/5 m-auto ">
+        <div className="mb-9 mt-11 grid lg:grid-cols-3 md:grid-cols-2 grid-rows-1 md:gap-8  gap-y-8   m-auto  w-3/4 ">
           {topics.data.map((topic) => (
             <Topic key={topic.id} topic={topic}></Topic>
           ))}
