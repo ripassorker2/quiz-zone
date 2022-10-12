@@ -12,7 +12,7 @@ const Navbar = () => {
   ];
 
   return (
-    <div className="flex justify-between items-center w-full  bg-black text-gray-300 px-9 py-6 ">
+    <div className="flex justify-between items-center w-full  bg-black text-gray-300 px-9 py-6 z-20">
       <div>
         <h2 className="italic font-semibold text-4xl hover:text-pink-600 duration-300 ">
           Quiz Zone
@@ -38,7 +38,7 @@ const Navbar = () => {
       </div>
       {manu || (
         <ul
-          className="flex flex-col justify-center items-center absolute top-0 right-0 w-full h-screen
+          className="flex flex-col justify-center items-center absolute top-0 right-0 w-full py-11
       bg-gradient-to-b from-black to-slate-900 md:hidden"
         >
           {link.map(({ link, id, path }) => (

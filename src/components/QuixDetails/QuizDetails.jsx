@@ -27,66 +27,62 @@ const QuizDetails = () => {
   return (
     <div className="my-9 font-serif">
       <h1 className="text-center md:text-5xl text-3xl pb-5 italic te font-serif my-6 text-blue-700 border-b-2">
-        Here are all quiz details !!
+        Here is quiz detail !!
       </h1>
       <ol>
-        {quistions.map(
-          ({ question, id, correctAnswer, options }) => (
-            console.log(correctAnswer),
-            (
-              <div
-                className="bg-black  md:w-3/4 m-auto p-9 mt-5 rounded-md"
-                key={id}
-              >
-                <div className="flex justify-between items-center">
-                  <li className="text-2xl list-decimal  my-5 text-gray-200 ">
-                    Quistion :{question}
-                  </li>
-                  <div onClick={() => handleShowAnswer(correctAnswer)}>
-                    <BsEyeFill size={25} className="text-blue-800" />
-                  </div>
-                </div>
-                <div className="grid md:grid-cols-2 text-xl text-white">
-                  <p
-                    onClick={() =>
-                      handleCorrectOrIncorrect(correctAnswer, options[0])
-                    }
-                    className="p-3 bg-slate-600 rounded-lg m-5 hover:bg-pink-600 duration-300"
-                  >
-                    A . {options[0]}
-                  </p>
-
-                  <p
-                    onClick={() =>
-                      handleCorrectOrIncorrect(correctAnswer, options[1])
-                    }
-                    className="p-3 bg-slate-600 rounded-lg m-5 hover:bg-pink-600 duration-300"
-                  >
-                    B . {options[1]}
-                  </p>
-
-                  <p
-                    onClick={() =>
-                      handleCorrectOrIncorrect(correctAnswer, options[2])
-                    }
-                    className="p-3 bg-slate-600 rounded-lg m-5 hover:bg-pink-600 duration-300"
-                  >
-                    C . {options[2]}
-                  </p>
-
-                  <p
-                    onClick={() =>
-                      handleCorrectOrIncorrect(correctAnswer, options[3])
-                    }
-                    className="p-3 bg-slate-600 rounded-lg m-5 hover:bg-pink-600 duration-300"
-                  >
-                    D . {options[3]}
-                  </p>
-                </div>
+        {quistions.map(({ question, id, correctAnswer, options }) => (
+          // console.log(correctAnswer),
+          <div
+            className="bg-black  md:w-3/4 m-auto p-9 mt-5 rounded-md"
+            key={id}
+          >
+            <div className="flex justify-between items-center">
+              <li className="text-2xl list-decimal  my-5 text-gray-200 ">
+                Quistion :{question}
+              </li>
+              <div onClick={() => handleShowAnswer(correctAnswer)}>
+                <BsEyeFill size={25} className="text-blue-800" />
               </div>
-            )
-          )
-        )}
+            </div>
+            <div className="grid md:grid-cols-2 text-xl text-white">
+              <p
+                onClick={() =>
+                  handleCorrectOrIncorrect(correctAnswer, options[0])
+                }
+                className="p-3 bg-slate-600 rounded-lg m-5 hover:bg-pink-600 duration-300"
+              >
+                A . {options[0]}
+              </p>
+
+              <p
+                onClick={() =>
+                  handleCorrectOrIncorrect(correctAnswer, options[1])
+                }
+                className="p-3 bg-slate-600 rounded-lg m-5 hover:bg-pink-600 duration-300"
+              >
+                B . {options[1]}
+              </p>
+
+              <p
+                onClick={() =>
+                  handleCorrectOrIncorrect(correctAnswer, options[2])
+                }
+                className="p-3 bg-slate-600 rounded-lg m-5 hover:bg-pink-600 duration-300"
+              >
+                C . {options[2]}
+              </p>
+
+              <p
+                onClick={() =>
+                  handleCorrectOrIncorrect(correctAnswer, options[3])
+                }
+                className="p-3 bg-slate-600 rounded-lg m-5 hover:bg-pink-600 duration-300"
+              >
+                D . {options[3]}
+              </p>
+            </div>
+          </div>
+        ))}
       </ol>
     </div>
   );
